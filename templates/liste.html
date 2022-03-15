@@ -1,0 +1,14 @@
+{% extends 'template.html' %}
+
+{% block title %}
+Fiche de personnage
+{% endblock %}
+
+{% block content %}
+<form action="{{ url_for('ficheDepuisListe')}}" method="post" id="formListePerso">
+  {% for perso in liste %}
+    <button type="submit" name='nom' value='{{ perso["nom"] }}'>{{ perso["nom"] }}</button>
+  {% endfor %}
+</form>
+</ul>
+{% endblock %}

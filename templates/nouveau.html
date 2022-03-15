@@ -1,0 +1,64 @@
+{% extends 'template.html' %}
+
+{% block title %}
+Création de personnage
+{% endblock %}
+
+{% block content %}
+<form action="{{ url_for('ajouter')}}" method="post" id="formNouveauPerso">
+  <table>
+    <tr>
+      <td><label for="nom">Nom :</label></td>
+      <td><input type="text" name="nom" /></td>
+    </tr>
+    
+    <tr>
+      <td><label for="nom">Classe :</label></td>
+      <td>
+        <select name="classe">
+          {% for classe in classes %}
+            <option value="{{ classe }}">{{ classe }}</option>
+          {% endfor %}
+        </select>
+      <td>
+    </tr>
+    
+    <tr>
+      <td><label for="force">Force :</label></td>
+      <td><input type="number" name="force" /></td>
+    </tr>
+
+    <tr>
+      <td><label for="charisme">Charisme :</label></td>
+      <td><input type="number" name="charisme" /></td>
+    </tr>
+
+    <tr>
+      <td><label for="vitesse">Vitesse</label></td>
+      <td><input type="number" name="vitesse" /></td>
+    </tr>
+
+    <tr>
+      <td><label for="agilité">Agilité</label></td>
+      <td><input type="number" name="agilité" /></td>
+    </tr>
+
+    <tr>
+      <td><label for="dextérité">Dextérité</label></td>
+      <td><input type="number" name="dextérité" /></td>
+    </tr>
+
+    <tr>
+      <td><label for="intelligence">Intelligence</label></td>
+      <td><input type="number" name="intelligence" /></td>
+    </tr>
+
+    <tr>
+      <td><label for="biographie">Biographie</label></td>
+      <td><textarea name="biographie"></textarea></td>
+    </tr>
+  </table>
+  <button type="submit">Envoyer</button>
+</form>
+
+{% endblock %}

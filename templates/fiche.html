@@ -1,0 +1,54 @@
+{% extends 'template.html' %}
+
+{% block title %}
+Fiche de personnage
+{% endblock %}
+
+{% block content %}
+<table id="fiche">
+    <tr>
+      <td>Nom</td>
+      <td>{{ perso["nom"] }}</td>
+    </tr>
+    
+    <tr>
+      <td>Classe</td>
+      <td>{{ perso["classe"] }}</td>
+    </tr>
+    
+    <tr>
+      <td>Force</td>
+      <td>{{ perso["force"] }}</td>
+    </tr>
+
+    <tr>
+      <td>Charisme</td>
+      <td>{{ perso["charisme"] }}</td>
+    </tr>
+
+    <tr>
+      <td>Vitesse</td>
+      <td>{{ perso["vitesse"] }}</td>
+    </tr>
+
+    <tr>
+      <td>Agilité</td>
+      <td>{{ perso["agilité"] }}</td>
+    </tr>
+
+    <tr>
+      <td>Dextérité</td>
+      <td>{{ perso["dextérité"] }}</td>
+    </tr>
+
+    <tr>
+      <td>Intelligence</td>
+      <td>{{ perso["intelligence"] }}</td>
+    </tr>
+
+    <tr>
+      <td>Biographie</td>
+      <td><p>{{ perso["biographie"] }}</p></td>
+    </tr>
+  </table>
+{% endblock %}
