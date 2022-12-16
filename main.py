@@ -2,7 +2,7 @@ from flask import Flask, render_template, request
 app = Flask('app')
 
 classes = [
-  'Guerrier',
+  'Guerrier'
   'Paladin',
   'Roublard',
   'Voleur',

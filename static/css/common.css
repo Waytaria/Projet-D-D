@@ -1,5 +1,5 @@
 html {
-  background: linear-gradient(0.25turn, #f05f61, #6e4545);
+  background: radial-gradient(circle, rgba(253,188,29,1) 60%, rgba(252,100,69,1) 100%);
 }
 
 body {
@@ -18,16 +18,16 @@ body {
   border-collapse: collapse;
 }
 
-#fiche > tbody > tr {
+#fiche tr {
   height: 50px;
 }
 
-#fiche > tbody > tr:hover {
+#fiche tr:hover {
   background-color: rgba(0, 0, 0, 0.4);
   transition-duration: 0.5s;
 }
 
-#fiche > tbody > tr {
+#fiche tr {
   background-color: rgba(0, 0, 0, 0);
   transition-duration: 0.5s;
 }
